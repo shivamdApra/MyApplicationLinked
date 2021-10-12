@@ -20,6 +20,6 @@ steps:
     tasks: 'assembleDebug assembleRelease'
 - task: CopyFiles@2
   inputs:
-    contents: '**/*.*'
+    contents: '**/*.a*'
     targetFolder: '$(build.artifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
