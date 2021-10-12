@@ -20,6 +20,6 @@ steps:
     tasks: 'assembleDebug assembleRelease'
 - task: CopyFiles@2
   inputs:
-    contents: '**/*.apk **/*.aar'
+    contents: '**/*.*'
     targetFolder: '$(build.artifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
